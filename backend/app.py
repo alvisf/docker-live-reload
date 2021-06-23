@@ -7,9 +7,10 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/')
 def hello():
+    print("hello")
 
-    return jsonify("hello")
+    return jsonify("hhhh")
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True, port=80)
+    app.run(host="0.0.0.0", debug=True, port=5000)

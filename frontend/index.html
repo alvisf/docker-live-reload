@@ -8,10 +8,10 @@
     <input type="text" id="myDIV" />
     <script>
       async function myFunction() {
-        const response = await fetch("http://192.168.29.46/");
+        const response = await fetch("http://0.0.0.0:5000/");
         var data = await response.json();
         console.log(data);
-        document.getElementById("myDIV").value = "hello";
+        document.getElementById("myDIV").value = data;
       }
     </script>
   </body>
