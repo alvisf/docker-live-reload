@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Click the "Click Here" button to say ho</p>
+
+    <button onclick="myFunction()">Click Here</button>
+
+    <input type="text" id="myDIV" />
+    <script>
+      async function myFunction() {
+        const response = await fetch("http://192.168.29.46/");
+        var data = await response.json();
+        console.log(data);
+        document.getElementById("myDIV").value = "hello";
+      }
+    </script>
+  </body>
+</html>
